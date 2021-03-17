@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:theme="@style/AppTheme"
+    tools:context=".AboutUs"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_about2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="169dp"
+        android:gravity="center"
+        android:text="Connecting domestic workers (Electricians,Plumbers etc)and local people of Jorhat via Tholua "
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/tv_about1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="6dp"
+        android:gravity="center"
+        android:text="Copyright \u00A9 2018\nAll Rights Reserved\nDesign and developed by \nJorhat Engineering College Students"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>

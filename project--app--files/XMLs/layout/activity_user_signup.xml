@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.dc_project.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blur">
+
+        <ImageView
+            android:id="@+id/img_user"
+            android:layout_width="144dp"
+            android:layout_height="173dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/user_access"
+            android:padding="10dp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fname"
+            android:hint="First Name"
+            android:minLines="1"
+            android:inputType="textCapWords"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/img_user"
+            android:padding="20dp"
+            android:layout_gravity="center_vertical"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lname"
+            android:hint="Last Name"
+            android:minLines="1"
+            android:inputType="textCapWords"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/fname"
+            android:padding="20dp"
+            android:layout_gravity="center_vertical"/>
+
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addr"
+            android:hint="Address"
+            android:minLines="3"
+            android:inputType="textCapWords"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/lname"
+            android:padding="20dp"
+            android:layout_gravity="center_vertical"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pin"
+            android:hint="PIN"
+            android:minLines="1"
+            android:maxLength="6"
+            android:inputType="phone"
+            android:elevation="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/addr"
+            android:padding="20dp"
+            android:layout_gravity="center_vertical"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phn"
+            android:hint="Phone Number"
+            android:minLines="1"
+            android:maxLength="10"
+            android:inputType="phone"
+            android:elevation="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/pin"
+            android:padding="20dp"
+            android:layout_gravity="center_vertical"/>
+
+        <Button
+            android:id="@+id/user_signup"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/roundedcorner"
+            android:onClick="onClick"
+            android:text="Sign Up"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/already"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_signup"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="-4dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/Clickhere"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+</ScrollView>

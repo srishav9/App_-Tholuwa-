@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hp.dc_project.MainActivity"
+    android:background="@drawable/background">
+
+
+    <ImageView
+        android:id="@+id/splashImageView"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/assamgovtlogo" />
+
+    <ImageView
+        android:id="@+id/splashImageView1"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/tholualogo"
+        android:layout_below="@id/splashImageView"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tholua"
+        android:textSize="30dp"
+        android:id="@+id/tv_splash"
+        android:layout_below="@+id/splashImageView1"
+        android:layout_centerHorizontal="true"
+        android:textColor="#101687"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Initiative under DC Jorhat"
+        android:textSize="18sp"
+        android:id="@+id/tv_splash2"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:textColor="#000"/>
+</RelativeLayout>
