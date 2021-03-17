@@ -1,1 +1,1 @@
-•	Web-App based project which integrated convenience and domestic-work (e.g. calling up a carpenter, electrician, etc.) which was eventually clubbed as an initiative for rural skill development program.
+•	Web-App based project which integrated convenience and domestic-work (e.g. calling up a carpenter, electrician, etc.)
