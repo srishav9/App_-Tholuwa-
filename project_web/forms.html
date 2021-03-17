@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>Admin Portal</title>
+    <!-- BOOTSTRAP CORE STYLE  -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONT AWESOME ICONS  -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE  -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Tims New Roman" rel="stylesheet">
+     <!-- HTML5 Shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <strong>Email: </strong>info@yourdomain.com
+                    &nbsp;&nbsp;
+                    <strong>Contact: </strong>+90-897-678-44
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END-->
+    <div class="navbar navbar-inverse set-radius-zero">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="dashboard.html">
+                    <img src="assets/img/logo.png" />
+                </a>
+                </div>
+
+            <div class="left-div">
+                <div class="user-settings-wrapper">
+                    <ul class="nav">
+                        <li>
+                            <div class="btn btn-warning" onclick="logout()">Logout</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content-wrapper" style="font-family: 'Times New Roman', cursive;">
+        <div class="container">
+              <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-head-line">Forms </h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                        <div class="panel-heading">
+                           EMPLOYEE DETAILS
+                        </div>
+                    <div class="panel-body">
+                    <form>
+                        <div class="form-group">
+                          <label for="exampleInputFirstName">First Name</label>
+                          <input type="text" class="form-control" id="exampleInputFirstName" name="firstName" placeholder="Enter First Name" />
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputLastName">Last Name</label>
+                          <input type="text" class="form-control" id="exampleInputLastName" name="lastName" placeholder="Enter Last Name" />
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputLastName">Phone Number</label>
+                          <input type="number" class="form-control" id="exampleInputPhone" name="phoneNumber" placeholder="Enter Phone Number" />
+                        </div>
+                        
+                        <div class="form-group form-inline">
+                          <label for="exampleInputGender">Gender</label><br>
+                          <label><input type="radio" class="form-control" id="exampleInputGender" name="gender" value="Male"/> Male</label>&nbsp;&nbsp;
+                          <label><input type="radio" class="form-control" id="exampleInputGender" name="gender" value="Female"/> Female</label>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputAddress">Address</label>
+                          <textarea type="text" rows="4" class="form-control" id="exampleInputAddress" name="address" placeholder="Enter Address" ></textarea>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputDOB">DOB</label>
+                          <input type="date" class="form-control" id="exampleInputDOB"  name="dob" placeholder="Enter DOB" />
+                        </div>
+                        <div class="form-group form-inline">
+                          <label for="exampleInputJob">Job Title</label><br>
+                          <label><input type="radio" class="form-control" id="exampleInputGender" name="job" value="Electrician"/> Electrician</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                          <label><input type="radio" class="form-control" id="exampleInputGender" name="job" value="Foundry"/> Foundry</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                          <label><input type="radio" class="form-control" id="exampleInputGender" name="job" value="Driver"/> Driver</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                          <label><input type="radio" class="form-control" id="exampleInputGender" name="job" value="Mechanist"/> Mechanist</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                          <label><input type="radio" class="form-control" id="exampleInputGender" name="job" value="Plumber"/> Plumber</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                          <label><input type="radio" class="form-control" id="exampleInputGender" name="job" value="Welder"/> Welder</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                          <label><input type="radio" class="form-control" id="exampleInputGender" name="job" value="Painter"/> Painter</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                          <label><input type="radio" class="form-control" id="exampleInputGender" name="job" value="Fitter"/> Fitter</label>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPIN">Pin Code</label>
+                          <input type="number" class="form-control" id="exampleInputPIN" name="pin" placeholder="Enter Pin Code" />
+                        </div>
+                        
+                        <div class="form-group">
+                          <label for="exampleInputHD">Hired Date</label>
+                          <input type="date" class="form-control" id="exampleInputHD" name="hr" placeholder="Enter Hired Date" />
+                        </div>
+<!--                        <div class="form-group">
+                          <label for="exampleInputFile">File input</label>
+                          <input type="file" id="exampleInputFile" />
+                        </div>-->
+                        <hr />
+                        <button type="submit" class="btn btn-success" onclick="writeUserData(this.form)">Submit</button>
+                    </form>
+                </div>
+            </div>
+          </div>
+        </div>
+       </div>
+      </div>
+    </div>
+    <!-- CONTENT-WRAPPER SECTION END-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    &copy; 2018 YourCompany | Designed By : <a href="https://www.facebook.com/imdad.hussainmamud" target="_blank">Students of Jec</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END-->
+    <!-- JAVASCRIPT AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>  
+    <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCEpVnBsqWsrf3rFSnSOJ7UuG3NHrKLfpg",
+    authDomain: "dcproject-7c844.firebaseapp.com",
+    databaseURL: "https://dcproject-7c844.firebaseio.com",
+    projectId: "dcproject-7c844",
+    storageBucket: "dcproject-7c844.appspot.com",
+    messagingSenderId: "346966195685"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+    <!-- CORE JQUERY SCRIPTS -->
+    <script src="assets/js/jquery-1.11.1.js"></script>
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/new.js"></script>
+</body>
+</html>
